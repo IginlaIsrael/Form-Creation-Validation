@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(e){
     const feedbackDiv = document.getElementById('#form-feedback');
     const name = document.getElementById('username').value.trim();
     const mail = document.getElementById('#email').value.trim();
-    const passWord = document.getElementById('#password').value.trim();
+    const password = document.getElementById('#password').value.trim();
     
     let isValid = true;
     //Add message error array here
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(e){
             //Add error message
             messages.push("email doesn`t include an @ or .");
         }
-        if(passWord.length <= 7){
+        if(password.length <= 7){
             isValid = false;
             //Add error messahe here
             messages.push("Password has to be atleast 8 characters long");
